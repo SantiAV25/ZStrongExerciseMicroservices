@@ -1,14 +1,15 @@
 package com.zStrong.app.Zstrong.core.repository;
 import java.util.*;
 
-import com.zStrong.app.Zstrong.core.model.routine;
+import com.zStrong.app.Zstrong.core.model.Routine;
 
 
 public interface iroutineRepository {
     
-    public routine saveRoutine(routine routine);
-    public routine editRoutine(routine routine);
-    public routine deleteRoutine(routine routine);
-    public List<routine> listRoutines();
-    public List<routine> listRoutinesByuserId(Long userId);
+    public Routine saveRoutine(Routine routine);
+    public Routine editRoutine(Routine routine);
+    public Routine deleteRoutine(Routine routine);
+    public List<Routine> listDefaultRoutines();
+    public List<Routine> listRoutinesByuserId(String userId);
+    public Routine getRoutineById(String routineId);
 }

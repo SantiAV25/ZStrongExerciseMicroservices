@@ -1,4 +1,7 @@
-package com.zStrong.app.Zstrong.core.model;
+package com.zStrong.app.Zstrong.infraestructure.controller.DTOs;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,14 +9,13 @@ import lombok.Builder.Default;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import java.util.*;
 
 @Builder
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Serie {
+public class SerieDTO {
     
     private String serieId;
     @Builder.Default
@@ -22,5 +24,4 @@ public class Serie {
     private List<Float> kgs = new ArrayList<>();
     @Builder.Default
     private List<Float> restTime = new ArrayList<>();
-   
 }

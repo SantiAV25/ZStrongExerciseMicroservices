@@ -1,14 +1,15 @@
 package com.zStrong.app.Zstrong.core.repository;
 
-import com.zStrong.app.Zstrong.core.model.mesoCiclo;
+import com.zStrong.app.Zstrong.core.model.MesoCiclo;
 
 import java.util.*;
 
 public interface imesoCicloRepository {
     
-    public mesoCiclo saveMesoCiclo(mesoCiclo mesoCiclo);
-    public mesoCiclo editMesoCiclo(mesoCiclo mesoCiclo);
-    public mesoCiclo deleMesoCiclo(mesoCiclo mesoCiclo);
-    public List<mesoCiclo> listMesoCiclos();
-    public List<mesoCiclo> listMesoCiclosByUserId(Long id);
+    public MesoCiclo saveMesoCiclo(MesoCiclo mesoCiclo);
+    public MesoCiclo editMesoCiclo(MesoCiclo mesoCiclo);
+    public MesoCiclo deleteMesoCiclo(MesoCiclo mesoCiclo);
+    public List<MesoCiclo> listMesoCiclosByUserId(String id);
+    public MesoCiclo getMesoCicloById(String id);
+
 }
